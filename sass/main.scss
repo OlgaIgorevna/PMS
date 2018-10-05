@@ -353,6 +353,7 @@ body * {
 				max-width: 350px;
 			}
 			.photo-block {
+				display: block;
 				height: 170px;
 				overflow: hidden;
 				@media(min-width: 768px) and (max-width: 1199px) {
@@ -404,13 +405,13 @@ body * {
 				font-size: 16px;
 				font-weight: 700;
 				text-transform: uppercase;
-					margin-bottom: 5px;
+				margin-bottom: 5px;
 			}
-			.title-product{
+			.title-product {
 				margin-right: 15px;
-			
+
 			}
-		
+
 		}
 		.info {
 			margin-top: 20px;
@@ -427,7 +428,7 @@ body * {
 	.projects {
 		background-color: #f1f1f1;
 		padding: 25px 15px;
-
+		margin-bottom: 30px;
 		.subtitle-2 {
 			margin-bottom: 25px;
 		}
@@ -436,8 +437,10 @@ body * {
 			margin: 0 auto;
 			margin-bottom: 30px;
 
+			border-bottom: 1px solid #acacac;
 
 			.photo-block {
+				display: block;
 				height: 180px;
 				width: 100%;
 				background-image: url("../img/pr1.png");
@@ -463,6 +466,9 @@ body * {
 				text-decoration-color: #c0c3d5;
 				text-decoration: underline;
 			}
+			&:last-child {
+				border-bottom: none;
+			}
 		}
 		.btn-show-all {
 			height: 50px;
@@ -470,12 +476,20 @@ body * {
 			max-width: 250px;
 			margin: 0 auto;
 		}
+
 	}
 	.news {
 		background: #f1f1f1;
 		padding: 25px 15px;
 		.subtitle-2 {
 			margin-bottom: 30px;
+			.red{
+				text-transform: none;
+				color: red;
+				position: relative;
+				top: -1px;
+				right: -2px;
+			}
 		}
 		.list-news {
 			.item {
@@ -543,11 +557,14 @@ body * {
 		width: 22px;
 		height: 22px;
 		border-radius: 50%;
-		background-color: #26327c!important;
+		background-color: #26327c;
 		background-repeat: no-repeat;
 		background-size: 7px 10px;
 		background-position: center;
 		font-size: 15px;
+		&.notactive {
+			background-color: #b2b2b2;
+		}
 	}
 	.prev-page {
 		background-image: url(../img/arrow-left.png);

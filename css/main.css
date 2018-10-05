@@ -873,6 +873,7 @@ body * {
         margin-bottom: 25px;
         max-width: 350px; } }
     .center-col .projects-container .item .photo-block {
+      display: block;
       height: 170px;
       overflow: hidden; }
       @media (min-width: 768px) and (max-width: 1199px) {
@@ -938,14 +939,17 @@ body * {
 
 .right-col .projects {
   background-color: #f1f1f1;
-  padding: 25px 15px; }
+  padding: 25px 15px;
+  margin-bottom: 30px; }
   .right-col .projects .subtitle-2 {
     margin-bottom: 25px; }
   .right-col .projects .item {
     max-width: 250px;
     margin: 0 auto;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    border-bottom: 1px solid #acacac; }
     .right-col .projects .item .photo-block {
+      display: block;
       height: 180px;
       width: 100%;
       background-image: url("../img/pr1.png");
@@ -969,6 +973,8 @@ body * {
       -webkit-text-decoration-color: #c0c3d5;
               text-decoration-color: #c0c3d5;
       text-decoration: underline; }
+    .right-col .projects .item:last-child {
+      border-bottom: none; }
   .right-col .projects .btn-show-all {
     height: 50px;
     width: 100%;
@@ -980,6 +986,12 @@ body * {
   padding: 25px 15px; }
   .right-col .news .subtitle-2 {
     margin-bottom: 30px; }
+    .right-col .news .subtitle-2 .red {
+      text-transform: none;
+      color: red;
+      position: relative;
+      top: -1px;
+      right: -2px; }
   .right-col .news .list-news .item {
     margin-bottom: 20px; }
     .right-col .news .list-news .item .date {
@@ -1038,12 +1050,15 @@ body * {
     height: 22px;
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #26327c !important;
+    background-color: #26327c;
     background-repeat: no-repeat;
     -webkit-background-size: 7px 10px;
             background-size: 7px 10px;
     background-position: center;
     font-size: 15px; }
+    .page-navigation .prev-page.notactive,
+    .page-navigation .next-page.notactive {
+      background-color: #b2b2b2; }
   .page-navigation .prev-page {
     background-image: url(../img/arrow-left.png);
     margin-right: 5px; }
