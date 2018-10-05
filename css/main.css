@@ -904,13 +904,37 @@ body * {
                 text-decoration-color: #c0c3d5;
         text-decoration: underline; }
 
-.center-col .card-product {
-  margin-top: 30px; }
-  .center-col .card-product .info {
-    margin-top: 20px;
-    font-weight: 500;
-    line-height: 22px;
-    font-size: 14px; }
+.center-col .card-product .title-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 20px; }
+  .center-col .card-product .title-row .title-product,
+  .center-col .card-product .title-row .date {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px; }
+  .center-col .card-product .title-row .title-product {
+    margin-right: 15px; }
+
+.center-col .card-product .info {
+  margin-top: 20px;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 14px; }
 
 .right-col .projects {
   background-color: #f1f1f1;

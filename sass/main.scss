@@ -391,10 +391,28 @@ body * {
 			}
 		}
 	}
-	
-	.card-product{
-		margin-top: 30px;
-		.info{
+
+	.card-product {
+		.title-row {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-bottom: 20px;
+			.title-product,
+			.date {
+				font-size: 16px;
+				font-weight: 700;
+				text-transform: uppercase;
+					margin-bottom: 5px;
+			}
+			.title-product{
+				margin-right: 15px;
+			
+			}
+		
+		}
+		.info {
 			margin-top: 20px;
 			font-weight: 500;
 			line-height: 22px;
@@ -539,13 +557,13 @@ body * {
 		background-image: url(../img/arrow-right.png);
 		margin-left: 5px;
 	}
-	.page{
+	.page {
 		margin: 0 10px;
 		color: #858484;
 		font-size: 14px;
 		font-weight: 800;
 	}
-	.page.active{
+	.page.active {
 		color: $main-color;
 	}
 }
