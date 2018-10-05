@@ -1002,6 +1002,83 @@ body * {
         font-weight: 700;
         margin-bottom: 5px; }
 
+.center-col .contacts-block .subtitle-2 {
+  margin-bottom: 30px; }
+
+.center-col .contacts-block #map {
+  height: 390px;
+  margin-bottom: 20px; }
+
+.center-col .contacts-block .callback {
+  background-color: #eff3f3;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 30px;
+  margin-top: 30px; }
+  .center-col .contacts-block .callback .btn-primary {
+    width: 250px;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; }
+  .center-col .contacts-block .callback .line {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px; }
+    .center-col .contacts-block .callback .line .label {
+      -webkit-flex-basis: 50%;
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%;
+      padding-right: 15px; }
+      @media (max-width: 575px) {
+        .center-col .contacts-block .callback .line .label {
+          -webkit-flex-basis: 100%;
+              -ms-flex-preferred-size: 100%;
+                  flex-basis: 100%;
+          margin-bottom: 10px; } }
+    .center-col .contacts-block .callback .line .field {
+      -webkit-flex-basis: 50%;
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%; }
+      .center-col .contacts-block .callback .line .field input {
+        width: 100%; }
+      @media (max-width: 575px) {
+        .center-col .contacts-block .callback .line .field {
+          -webkit-flex-basis: 100%;
+              -ms-flex-preferred-size: 100%;
+                  flex-basis: 100%; } }
+
+input[type="text"], input[type="phone"], input[type="email"] {
+  height: 40px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  padding: 10px 15px; }
+  input[type="text"]:focus, input[type="phone"]:focus, input[type="email"]:focus {
+    outline: none; }
+
+textarea {
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  width: 100%;
+  min-height: 70px;
+  border: none;
+  resize: none;
+  padding: 10px 15px; }
+  textarea:focus {
+    outline: none; }
+
 .right-col .projects {
   background-color: #f1f1f1;
   padding: 25px 15px;
