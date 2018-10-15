@@ -1,16 +1,23 @@
 footer {
-background-color: #282828;
+	background-color: #282828;
 	@include ul-reset;
 
 	padding: 15px 0 25px 0;
 	.logo-block {
 		@include bg-icon;
-		background-image: url("../img/logo.png");
-		width: 80px;
-		height: 80px;
+		flex-basis: 25%;
+
+		background-position: left center!important;
+		background-image: url("../img/logo_388x80.png");
+		width: 232px;
+		height: 47px;
+		@media(max-width: 991px) {
+			flex-basis: auto;
+		}
 
 		@media(max-width: 767px) {
 			order: 1;
+			max-width: 150px;
 		}
 	}
 	.header-row {
@@ -21,6 +28,9 @@ background-color: #282828;
 		margin-bottom: 15px;
 
 		.menu-top {
+			flex-basis: 46%;
+			display: flex;
+			justify-content: center;
 			ul {
 				display: flex;
 				li {
@@ -53,7 +63,9 @@ background-color: #282828;
 				}
 
 			}
-
+			@media(max-width: 991px) {
+				flex-basis: auto;
+			}
 			@media(max-width: 767px) {
 				order: 3;
 				margin-top: 15px;
@@ -61,6 +73,7 @@ background-color: #282828;
 			}
 		}
 		.contact-block {
+			flex-basis: 25%;
 			a {
 				display: block;
 				&.phone {
@@ -68,12 +81,17 @@ background-color: #282828;
 					font-weight: 800;
 					margin-bottom: 5px;
 					color: white;
+					text-align: right;
 				}
 				&.mail {
 					color: #235dac;
 					text-transform: uppercase;
 					font-weight: 500;
+					text-align: right;
 				}
+			}
+			@media(max-width: 991px) {
+				flex-basis: auto;
 			}
 			@media(max-width: 767px) {
 				order: 2;
